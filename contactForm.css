@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:cornsilk;
+}
+
+img {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+h2 > span {
+    color: #FA9F42;
+    font-size: 0.75em;
+}
+
+form > div {
+    margin: 0.5em 0 0.5em 0;
+}
+
+input:focus:invalid {
+    color: red;
+    border: red 3px solid;
+}
+
+form {
+    display: block;
+    text-align: center;
+    z-index: 2;
+    display: block;
+    background-color: lemonchiffon;
+    border-style: outset;
+    border-color: black;
+    max-width: 250px;
+    min-width: 200px;
+    line-height: 15px;
+    margin: 10px auto 150px auto;
+    padding: 5px 20px 5px 20px; 
+
+}
+
+section {
+    position: relative;
+    z-index: 20;
+    top: 20px;
+}
+
+/* Navigation Bar Start */
+nav { 
+    position:relative;
+    display: flexbox;
+    border-style: solid;
+    border-width: 2.5px;
+    z-index: 100;
+    display: block;
+    margin: 0px 4px 5px 4px;
+    top: 5px;
+    min-width: 100px;
+    background-color: yellowgreen;
+    opacity: 90%;
+    max-width: 2000px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 1px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+nav ul li {
+    width: 25%;
+}
+
+nav ul li > ul {
+    display: none;
+    flex-direction: column;
+}
+
+nav ul li:hover > ul {
+    display: flex;
+    
+}
+
+@media (max-width: 40em) {
+    nav ul li {
+      width: 100%;
+    }
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    background-color: yellowgreen ;
+    padding: 4px;
+    color: black;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: yellow;
+}
+
+nav .dropdown li > a {
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 0px 6px 0px 10px;
+    margin-right: 10px;
+    cursor: grab;
+}
+.dropdown a {
+    cursor: grab;
+}
+
+.dropdown:hover {
+    display: block;
+    background-color: yellow;
+    font-size: larger;
+}
+
+.dropdown ul li a:hover {
+    background-color: yellow;
+    margin-left: 15px;
+    display: block;
+}
+
+nav .dropdown ul {
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    position: fixed;
+    background-color: yellowgreen;
+    position: absolute;
+    opacity: 90%;
+    padding: 0px 60px 0px 60px;
+    margin: 0 20px 0 20px;
+}
+
+nav ul .dropdown ul li a:hover {
+    position: relative;
+    z-index: 200;
+    background-color: yellow;
+    width: 70px;
+    cursor: pointer;
+}
+
+.dropdown ul li a {
+    margin: 0px 20px 0px 0px;
+    padding-left: 0px;
+    min-width: 50px;
+    max-width: 250px;
+    
+}
+
+.dropdown a ul {
+    position: fixed;
+    
+    
+}
+
+.dropdown ul li a:hover {
+    position: relative;
+    z-index: 200;
+    background-color: yellow;
+    width: 70px;
+    cursor: pointer;
+}
+
+.dropdown ul li a {
+    margin-right: 20px;
+    padding-left: 0px;
+    min-width: 50px;
+    max-width: 250px;
+}
+
+.dropdown a ul {
+    position: fixed;
+}
+
+
+
+/*Navigation Bar End */
+
+.contact {
+    display: grid;
+    grid-template-columns: 6/ span 3;
+    grid-template-rows: 1/ span 1;
+    padding: 10px 20px 10px 20px;
+    margin: 0 auto 0 auto;
+    border: 2px;
+    border-color: antiquewhite;
+    border-style:inset;
+    padding-top: 10px;
+    opacity: 90%;
+    min-width: 75px;
+    max-width: 225px;
+    position: relative;
+    top: -135px;
+    text-align: center;
+}
+
+.hours {
+    position: relative;
+    top: -125px;
+    text-align: center;
+    font-style: normal;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    position: relative;
+    top: -75px;
+}
+
+.footer > div {
+    flex: 1;
+}
+
+
+.logo {
+    display: block;
+    flex-direction: row;
+    background-color: antiquewhite;
+    border: 2px;
+    border-color: antiquewhite;
+    border-style:inset;
+    opacity: 20%;
+    min-width: 300px;
+    margin: 0px 10px 10px 10px;
+    padding: 10px 20px 0 0;
+}
+.copywrite {
+    display: block;
+    flex-direction: row;
+    background-color: antiquewhite;
+    border: 2px;
+    border-color: antiquewhite;
+    border-style:inset;
+    padding: 30px 20px 40px 20px;
+    place-items: center;
+    opacity: 24%;
+    min-width: 300px;
+    max-height: 50px;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+} 
+
+
+.copywrite p {
+    color: black;
+}
+
+/* Form Start */
+form input {
+    font-size: medium;
+}
+
+#messagebox {
+    font-size: large;
+}
+
+#seating {
+    font-size: larger;
+}
+
+.radioB {
+    font-size: x-large;
+    color: aqua;
+}
+p {
+    color: black;
+}
+
+.RadioBtns {
+    font-style:italic ;
+    font-weight: 600;
+
+}
+
+#btn {
+    border-style: outset;
+    border-color: azure;
+    border-width: 3px;
+}
+
+#btn:hover {
+    background-color:gainsboro;
+    opacity: 90%;
+}
+
+/*Form End */
+
+
+
+.hours h4 {
+    line-height: 20px;
+    font-weight: bolder;
+    display: block;
+    margin-top: 2.5px;
+
+}
+
+.hours h3 {
+    text-decoration: underline;
+}
+
+.hours p {
+    font-weight: bold;
+    color: blue;
+    opacity: 70%;
+}
+
+.hours ul {
+    list-style: none;
+}

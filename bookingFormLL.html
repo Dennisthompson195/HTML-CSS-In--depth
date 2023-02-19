@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1">
+  
+  <title>Booking</title>
+  <meta name="description" content="A brief description">
+  <meta name="author" content="Magnata and Gallo Website">
+ <link rel="stylesheet" href="bookingFormLL.css">
+</head>
+
+<body>
+    <Header>
+        <header>
+            <img src="LittleLemon16.png" style="width: 250px">
+         </header>
+    </Header>
+
+        <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutLL.html">About Us</a></li>
+            
+          <li class="dropdown"><a href="#">Menus</a>
+                <ul>
+                   <li><a href="dinnerMenuLL.html">Dinner</a></li>
+                   <li><a href="lunchMenuLL.html">Lunch</a> </li>
+                   <li><a href="brunchMenuLL.html">Brunch</a> </li>
+                </ul>
+            </li>
+          <li><a href="contactForm.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+      <section>
+        <form method="post">
+            <div>
+              <label for="name">First name</label><br>
+               <input type="name" input id="name" input name="name" required minlength="2">
+            </div>
+            <div>
+              <label for="name">Last Name</label><br>
+              <input type="name" input id="name" input name="name" required minlength="2">
+           </div>
+           <div>
+            <label for="tel">Telephone</label><br>
+            <input type="tel" input id="tel" input name="tel" required minlength="10" maxlength="10">
+           </div>
+           <div>
+               <label for=email>Email</label><br>
+              <input type="email" input id="email" input name="email" required="@">
+            </div>
+            <div>
+                <label for="date">Booking Date</label><br>
+                <input type="date" input id="date" input name="date" required="day">
+            </div>
+            <div>
+              <label for="time" label id="time">Time</label><br>
+              <input type="time" input name="time" input id="time">
+             </div>
+            <div>
+              <label for="number">Party Size</label><br>
+              <input type="number" input id="number" input name="number" required min="1" max="8" >
+            </div>
+            <div>
+                <label for="seating" label id="seating">Preferred Seating</label><br>
+                <div class="RadioBtns">
+                <input class="radioB" type="radio" input name="seating" input id="seating1" value="bar">Bar
+                <input type="radio" input name="seating" input id="seating1" value="Patio">Patio
+                <input type="radio" input name="seating" input id="seating1" value="DiningRoom">Dining Room<br></div>
+             </div> 
+            <div>
+              <label for="message">Leave us a message below</label><br>
+              <textarea name="messagebox" textarea id="messagebox" rows="6" cols="20"></textarea>
+            </div>
+            <div>
+              <label for="checkbox">I agree to the cancelation policy</label>
+              <input type="checkbox" input id="checkbox" input name="checkbox" required>
+           </div>
+            <button id="btn" type="btn">Book Now</button>
+         </form>
+      </section>
+      <section>
+        <article class="contact">
+          <Address>Located at 9500 Montebello Avenue.<br>
+            Chicago, Illinois<br>
+            <phone>(773) 567-8888</phone><br>
+            <email>Contact@littlelemon.com</email>
+            </Address>
+        </article>
+            <article class="hours">
+                    <h3>Hours of Operation</h3>
+                <ul> 
+                  <li>
+                    <h4>Monday-Thursday:</h4>
+                        <p>11am-9pm</p>
+                  </li>
+                  <li>
+                    <h4>Friday-Saturday:</h4>
+                        <p>11am-11pm</p>
+                  </li> 
+                  <li>
+                    <h4>Sunday:</h4>
+                       <p>10am-10pm</p>
+                  </li>
+                </ul>
+            </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="logo">
+            <img src="LittleLemon18.png" style="width: 3rem">
+        </div>
+        <div class="copywrite">
+            <p>Copywrite Little Lemon</p>
+        </div>
+    </footer>
+</body>
+
+</html>
