@@ -186,7 +186,7 @@ header > img {
     border-style:inset;
     min-width: 250px;
     margin: 0px 10px 15px 0px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 .copywrite {
     display: block;
@@ -199,7 +199,7 @@ header > img {
     place-items: center;
     min-width: 250px;
     max-height: 50px;
-    margin-bottom: 15px;
+    margin: 0px 10px 15px 0px;
     text-align: center;
 } 
 /* End footer elements */
@@ -349,6 +349,7 @@ nav ul .dropdown ul li a:hover {
     padding-top: 100px;
     display: block;
     background-blend-mode: color-dodge;
+    place-content: center;
     
 }
 
